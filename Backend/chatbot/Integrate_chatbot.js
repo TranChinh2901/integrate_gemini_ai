@@ -4,6 +4,11 @@ const productModel = require("../model/product.model");
 
 const genAI = new GoogleGenerativeAI(process.env.CHATBOT_API_KEY)
 const model = genAI.getGenerativeModel({
+    //3 phiên bản mạnh nhất của gemini (recommend dùng model: gemini-2.0-flash) vì phản hồi nhanh
+    // 2 phiên bản còn lại có chế độ thinking nên nó phải chờ suy nghĩ trước khi đưa ra kết quảquả
+
+    // model: "gemini-2.5-flash-preview-04-17"
+    // model: "gemini-2.5-pro-exp-03-25"
     model: "gemini-2.0-flash"
 });
 

@@ -24,10 +24,7 @@
   right: 0;
 }
 
-.toggleButton:hover {
-  background-color: #3b56c4;
-  transform: scale(1.05);
-}
+
 
 .icon {
   width: 28px;
